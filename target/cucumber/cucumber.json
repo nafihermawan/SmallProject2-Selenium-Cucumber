@@ -1,0 +1,227 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7118130638,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User create account",
+        "description": "",
+        "id": "create-new-account;user-create-account",
+        "after": [
+          {
+            "result": {
+              "duration": 295768,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3711421475,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User open Web Page and click SignIn",
+            "match": {
+              "location": "CreateAccountStep.openHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 548381769,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User input \"user1@mailnesia.com\" as email address and click button Create Account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user1@mailnesia.com",
+                  "offset": 12
+                }
+              ],
+              "location": "CreateAccountStep.inputEmail(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 374561014,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The User see error message",
+            "match": {
+              "location": "CreateAccountStep.invalidLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@NegativeCase"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8803164898,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "User create account",
+        "description": "",
+        "id": "create-new-account;user-create-account",
+        "after": [
+          {
+            "result": {
+              "duration": 42453,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2901509906,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User open Web Page and click SignIn",
+            "match": {
+              "location": "CreateAccountStep.openHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 320117411,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User input \"user221@mailnesia.com\" as email address and click button Create Account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user221@mailnesia.com",
+                  "offset": 12
+                }
+              ],
+              "location": "CreateAccountStep.inputEmail(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2544883877,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User input \"userdua\" as first name, User input \"dua\" as last name and \"sekolahqa\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "userdua",
+                  "offset": 12
+                },
+                {
+                  "val": "dua",
+                  "offset": 48
+                },
+                {
+                  "val": "sekolahqa",
+                  "offset": 71
+                }
+              ],
+              "location": "CreateAccountStep.inputName(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1346055377,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User select \"5\" as day, \"1\" as january and \"2000\" as year",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 13
+                },
+                {
+                  "val": "1",
+                  "offset": 25
+                },
+                {
+                  "val": "2000",
+                  "offset": 44
+                }
+              ],
+              "location": "CreateAccountStep.setDateOfBirth(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User already created",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@PositiveCase"
+          }
+        ]
+      }
+    ],
+    "name": "Create new account",
+    "description": "",
+    "id": "create-new-account",
+    "keyword": "Feature",
+    "uri": "features/CreateAccount.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CreateAccount"
+      }
+    ]
+  }
+]
